@@ -97,7 +97,7 @@ p {
 }
 
 a {
-    color: var(--primary-color);
+    color: var(--secondary-color);
     text-decoration: none;
     transition: var(--transition-fast);
 }

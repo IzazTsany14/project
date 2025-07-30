@@ -1,0 +1,846 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Startup Mahasiswa - UKM Kewirausahaan UNESA Kampus 5</title>
+    <meta name="description" content="Showcase startup dan bisnis mahasiswa UKM Kewirausahaan UNESA Kampus 5 Magetan">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/components/navbar.css">
+    <link rel="stylesheet" href="../css/components/cards.css">
+    <link rel="stylesheet" href="../css/components/buttons.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="../assets/images/logos/ukm-logo.png" alt="UKM Kewirausahaan UNESA" class="logo-img">
+                <div class="logo-text">
+                    <h3>UKM Kewirausahaan</h3>
+                    <span>UNESA Kampus 5</span>
+                </div>
+            </div>
+            
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item">
+                    <a href="../index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle">Tentang Kami</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="../about/index.html">Profil UKM</a></li>
+                        <li><a href="../about/structure.html">Struktur Pengurus</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a href="../programs/index.html" class="nav-link">Program & Kegiatan</a>
+                </li>
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link active">Startup Mahasiswa</a>
+                </li>
+                <li class="nav-item">
+                    <a href="../gallery/index.html" class="nav-link">Galeri</a>
+                </li>
+                <li class="nav-item">
+                    <a href="../blog/index.html" class="nav-link">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a href="../join/index.html" class="nav-link btn-primary">Join Us</a>
+                </li>
+                <li class="nav-item">
+                    <a href="../contact/index.html" class="nav-link">Kontak</a>
+                </li>
+            </ul>
+            
+            <div class="nav-actions">
+                <button class="theme-toggle" id="theme-toggle">
+                    <span class="theme-icon">🌙</span>
+                </button>
+                <button class="nav-toggle" id="nav-toggle">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="page-hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Startup Mahasiswa</h1>
+                <p>Bangga dengan pencapaian startup yang dikembangkan oleh anggota UKM Kewirausahaan</p>
+                <div class="breadcrumb">
+                    <a href="../index.html">Home</a>
+                    <span>/</span>
+                    <span>Startup Mahasiswa</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Startup Stats -->
+    <section class="startup-stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-icon">🚀</div>
+                    <h3 class="stat-number">15</h3>
+                    <p>Startup Aktif</p>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">💰</div>
+                    <h3 class="stat-number">2.5M</h3>
+                    <p>Total Omzet (IDR)</p>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">👥</div>
+                    <h3 class="stat-number">50+</h3>
+                    <p>Founder Mahasiswa</p>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">🏆</div>
+                    <h3 class="stat-number">8</h3>
+                    <p>Penghargaan</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Category Filter -->
+    <section class="category-filter">
+        <div class="container">
+            <div class="filter-tabs">
+                <button class="filter-btn active" data-category="all">Semua Kategori</button>
+                <button class="filter-btn" data-category="tech">Technology</button>
+                <button class="filter-btn" data-category="food">Food & Beverage</button>
+                <button class="filter-btn" data-category="fashion">Fashion</button>
+                <button class="filter-btn" data-category="education">Education</button>
+                <button class="filter-btn" data-category="service">Service</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Startups -->
+    <section class="featured-startups">
+        <div class="container">
+            <div class="section-header">
+                <h2>Startup Unggulan 2025</h2>
+                <p>Startup terbaik yang telah mencapai milestone signifikan</p>
+            </div>
+            
+            <div class="startups-grid">
+                <div class="startup-card featured" data-category="tech">
+                    <div class="startup-badge">🏆 Startup Terbaik 2025</div>
+                    <div class="startup-logo">
+                        <img src="https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=400&h=250&fit=crop" alt="EcoFresh">
+                    </div>
+                    <div class="startup-content">
+                        <h3>EcoFresh</h3>
+                        <span class="startup-category">Technology</span>
+                        <p>Platform e-commerce untuk produk ramah lingkungan dan sustainable living dengan sistem reward untuk konsumen eco-friendly.</p>
+                        <div class="startup-metrics">
+                            <div class="metric">
+                                <span class="metric-value">10K+</span>
+                                <span class="metric-label">Users</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">500M</span>
+                                <span class="metric-label">Revenue</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">4.8</span>
+                                <span class="metric-label">Rating</span>
+                            </div>
+                        </div>
+                        <div class="startup-founder">
+                            <img src="https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg?auto=compress&cs=tinysrgb&w=50&h=50&fit=crop" alt="Founder">
+                            <div class="founder-info">
+                                <strong>Radja Yudha Wiyana</strong>
+                                <span>CEO & Founder</span>
+                            </div>
+                        </div>
+                        <div class="startup-links">
+                            <a href="#" class="startup-link">🌐 Website</a>
+                            <a href="#" class="startup-link">📱 Instagram</a>
+                            <a href="#" class="startup-link">🛒 Shopee</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="startup-card" data-category="education">
+                    <div class="startup-badge">Startup Unggulan 2025</div>
+                    <div class="startup-logo">
+                        <img src="https://images.pexels.com/photos/3184339/pexels-photo-3184339.jpeg?auto=compress&cs=tinysrgb&w=400&h=250&fit=crop" alt="EduTech">
+                    </div>
+                    <div class="startup-content">
+                        <h3>EduTech Solutions</h3>
+                        <span class="startup-category">Education</span>
+                        <p>Aplikasi pembelajaran online untuk mendukung pendidikan digital Indonesia dengan fitur AI tutor dan gamifikasi.</p>
+                        <div class="startup-metrics">
+                            <div class="metric">
+                                <span class="metric-value">5K+</span>
+                                <span class="metric-label">Students</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">200M</span>
+                                <span class="metric-label">Revenue</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">4.6</span>
+                                <span class="metric-label">Rating</span>
+                            </div>
+                        </div>
+                        <div class="startup-founder">
+                            <img src="https://images.pexels.com/photos/3184339/pexels-photo-3184339.jpeg?auto=compress&cs=tinysrgb&w=50&h=50&fit=crop" alt="Founder">
+                            <div class="founder-info">
+                                <strong>Sarah Devi Lestari</strong>
+                                <span>CEO & Founder</span>
+                            </div>
+                        </div>
+                        <div class="startup-links">
+                            <a href="#" class="startup-link">🌐 Website</a>
+                            <a href="#" class="startup-link">📱 Play Store</a>
+                            <a href="#" class="startup-link">📸 Instagram</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="startup-card" data-category="food">
+                    <div class="startup-badge">Startup Unggulan 2025</div>
+                    <div class="startup-logo">
+                        <img src="https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=400&h=250&fit=crop" alt="FoodCourt">
+                    </div>
+                    <div class="startup-content">
+                        <h3>FoodCourt Online</h3>
+                        <span class="startup-category">Food & Beverage</span>
+                        <p>Platform delivery makanan lokal dengan fokus pada UMKM kuliner di Magetan dan sekitarnya.</p>
+                        <div class="startup-metrics">
+                            <div class="metric">
+                                <span class="metric-value">2K+</span>
+                                <span class="metric-label">Orders</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">150M</span>
+                                <span class="metric-label">Revenue</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">4.7</span>
+                                <span class="metric-label">Rating</span>
+                            </div>
+                        </div>
+                        <div class="startup-founder">
+                            <img src="https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=50&h=50&fit=crop" alt="Founder">
+                            <div class="founder-info">
+                                <strong>Ahmad Rifqi Pratama</strong>
+                                <span>CEO & Founder</span>
+                            </div>
+                        </div>
+                        <div class="startup-links">
+                            <a href="#" class="startup-link">🌐 Website</a>
+                            <a href="#" class="startup-link">📱 WhatsApp</a>
+                            <a href="#" class="startup-link">🛒 Tokopedia</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- All Startups -->
+    <section class="all-startups">
+        <div class="container">
+            <div class="section-header">
+                <h2>Semua Startup</h2>
+                <p>Koleksi lengkap startup yang dikembangkan oleh anggota UKM</p>
+            </div>
+            
+            <div class="startups-grid">
+                <div class="startup-card" data-category="fashion">
+                    <div class="startup-logo">
+                        <img src="https://images.pexels.com/photos/3184430/pexels-photo-3184430.jpeg?auto=compress&cs=tinysrgb&w=400&h=250&fit=crop" alt="FashionHub">
+                    </div>
+                    <div class="startup-content">
+                        <h3>FashionHub</h3>
+                        <span class="startup-category">Fashion</span>
+                        <p>Platform fashion online untuk produk lokal dengan konsep sustainable fashion.</p>
+                        <div class="startup-links">
+                            <a href="#" class="startup-link">🌐 Website</a>
+                            <a href="#" class="startup-link">📸 Instagram</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="startup-card" data-category="service">
+                    <div class="startup-logo">
+                        <img src="https://images.pexels.com/photos/3184432/pexels-photo-3184432.jpeg?auto=compress&cs=tinysrgb&w=400&h=250&fit=crop" alt="CleanService">
+                    </div>
+                    <div class="startup-content">
+                        <h3>CleanService</h3>
+                        <span class="startup-category">Service</span>
+                        <p>Layanan cleaning service on-demand untuk rumah dan kantor di area Magetan.</p>
+                        <div class="startup-links">
+                            <a href="#" class="startup-link">📱 WhatsApp</a>
+                            <a href="#" class="startup-link">📸 Instagram</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="startup-card" data-category="tech">
+                    <div class="startup-logo">
+                        <img src="https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg?auto=compress&cs=tinysrgb&w=400&h=250&fit=crop" alt="SmartFarm">
+                    </div>
+                    <div class="startup-content">
+                        <h3>SmartFarm</h3>
+                        <span class="startup-category">Technology</span>
+                        <p>Sistem monitoring pertanian berbasis IoT untuk meningkatkan produktivitas petani.</p>
+                        <div class="startup-links">
+                            <a href="#" class="startup-link">🌐 Website</a>
+                            <a href="#" class="startup-link">📱 App Store</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="startup-card" data-category="food">
+                    <div class="startup-logo">
+                        <img src="https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=400&h=250&fit=crop" alt="HealthySnack">
+                    </div>
+                    <div class="startup-content">
+                        <h3>HealthySnack</h3>
+                        <span class="startup-category">Food & Beverage</span>
+                        <p>Produksi dan distribusi camilan sehat berbahan lokal untuk gaya hidup sehat.</p>
+                        <div class="startup-links">
+                            <a href="#" class="startup-link">🛒 Shopee</a>
+                            <a href="#" class="startup-link">📸 Instagram</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="startup-card" data-category="education">
+                    <div class="startup-logo">
+                        <img src="https://images.pexels.com/photos/3184339/pexels-photo-3184339.jpeg?auto=compress&cs=tinysrgb&w=400&h=250&fit=crop" alt="SkillBoost">
+                    </div>
+                    <div class="startup-content">
+                        <h3>SkillBoost</h3>
+                        <span class="startup-category">Education</span>
+                        <p>Platform kursus online untuk mengembangkan skill digital dan soft skill mahasiswa.</p>
+                        <div class="startup-links">
+                            <a href="#" class="startup-link">🌐 Website</a>
+                            <a href="#" class="startup-link">📱 YouTube</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="startup-card" data-category="service">
+                    <div class="startup-logo">
+                        <img src="https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=400&h=250&fit=crop" alt="EventOrganizer">
+                    </div>
+                    <div class="startup-content">
+                        <h3>EventOrganizer</h3>
+                        <span class="startup-category">Service</span>
+                        <p>Jasa event organizer untuk acara kampus, seminar, dan gathering mahasiswa.</p>
+                        <div class="startup-links">
+                            <a href="#" class="startup-link">📱 WhatsApp</a>
+                            <a href="#" class="startup-link">📸 Instagram</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Success Stories -->
+    <section class="success-stories">
+        <div class="container">
+            <div class="section-header">
+                <h2>Kisah Sukses</h2>
+                <p>Perjalanan inspiratif para founder startup UKM Kewirausahaan</p>
+            </div>
+            
+            <div class="stories-grid">
+                <div class="story-card">
+                    <div class="story-quote">"</div>
+                    <p>"Bergabung dengan UKM Kewirausahaan memberikan saya kesempatan untuk mengembangkan EcoFresh dari sekadar ide menjadi bisnis nyata dengan omzet ratusan juta."</p>
+                    <div class="story-author">
+                        <img src="https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg?auto=compress&cs=tinysrgb&w=60&h=60&fit=crop" alt="Radja">
+                        <div class="author-info">
+                            <strong>Radja Yudha Wiyana</strong>
+                            <span>Founder EcoFresh</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="story-card">
+                    <div class="story-quote">"</div>
+                    <p>"Program inkubasi bisnis di UKM sangat membantu dalam mengembangkan EduTech Solutions. Mentoring yang diberikan sangat aplikatif dan sesuai kebutuhan startup."</p>
+                    <div class="story-author">
+                        <img src="https://images.pexels.com/photos/3184339/pexels-photo-3184339.jpeg?auto=compress&cs=tinysrgb&w=60&h=60&fit=crop" alt="Sarah">
+                        <div class="author-info">
+                            <strong>Sarah Devi Lestari</strong>
+                            <span>Founder EduTech Solutions</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="story-card">
+                    <div class="story-quote">"</div>
+                    <p>"Networking yang terbangun di UKM luar biasa. Saya bisa berkolaborasi dengan sesama anggota dan mendapat dukungan penuh untuk mengembangkan FoodCourt Online."</p>
+                    <div class="story-author">
+                        <img src="https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=60&h=60&fit=crop" alt="Ahmad">
+                        <div class="author-info">
+                            <strong>Ahmad Rifqi Pratama</strong>
+                            <span>Founder FoodCourt Online</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="startup-cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Punya Ide Startup?</h2>
+                <p>Bergabunglah dengan UKM Kewirausahaan dan wujudkan ide bisnismu menjadi startup yang sukses!</p>
+                <div class="cta-buttons">
+                    <a href="../join/index.html" class="btn btn-primary">Daftar Sekarang</a>
+                    <a href="../programs/index.html" class="btn btn-secondary">Lihat Program Inkubasi</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section footer-about">
+                    <div class="footer-logo">
+                        <img src="../assets/images/logos/ukm-logo.png" alt="UKM Kewirausahaan UNESA">
+                        <div class="footer-logo-text">
+                            <h3>UKM Kewirausahaan</h3>
+                            <span>UNESA Kampus 5</span>
+                        </div>
+                    </div>
+                    <p>Wadah inovasi dan kreativitas mahasiswa UNESA Kampus 5 untuk mengembangkan jiwa entrepreneur sejak 2025.</p>
+                    <div class="footer-social">
+                        <a href="#" class="social-link" title="Email">📧</a>
+                        <a href="#" class="social-link" title="WhatsApp">📱</a>
+                        <a href="#" class="social-link" title="Website">🌐</a>
+                        <a href="#" class="social-link" title="Instagram">📸</a>
+                    </div>
+                </div>
+                
+                <div class="footer-section footer-links">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-menu">
+                        <li><a href="../about/index.html">Tentang Kami</a></li>
+                        <li><a href="../programs/index.html">Program</a></li>
+                        <li><a href="index.html">Startup</a></li>
+                        <li><a href="../gallery/index.html">Galeri</a></li>
+                        <li><a href="../blog/index.html">Blog</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section footer-programs">
+                    <h4>Program Unggulan</h4>
+                    <ul class="footer-menu">
+                        <li><a href="#">Inkubasi Bisnis</a></li>
+                        <li><a href="#">Workshop & Seminar</a></li>
+                        <li><a href="#">Bazar Kampus</a></li>
+                        <li><a href="#">Networking</a></li>
+                        <li><a href="#">Mentoring</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section footer-contact">
+                    <h4>Kontak</h4>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <span class="contact-icon">📍</span>
+                            <div class="contact-text">
+                                <p>Jl. Raya Magetan - Ponorogo Km. 6</p>
+                                <p>UNESA Kampus 5, Magetan</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-icon">📞</span>
+                            <p>+62 xxx-xxxx-xxxx</p>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-icon">📧</span>
+                            <p>ukm.kewirausahaan@unesa.ac.id</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-bottom-content">
+                    <p>&copy; 2025 UKM Kewirausahaan UNESA Kampus 5. All rights reserved.</p>
+                    <div class="footer-bottom-links">
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Terms of Service</a>
+                        <a href="#">Sitemap</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Float Button -->
+    <div class="whatsapp-float">
+        <a href="https://wa.me/6281234567890" target="_blank" class="whatsapp-btn">
+            <span class="whatsapp-icon">💬</span>
+        </a>
+    </div>
+
+    <!-- Back to Top -->
+    <div class="back-to-top" id="back-to-top">
+        <span>⬆️</span>
+    </div>
+
+    <!-- Scripts -->
+    <script src="../js/main.js"></script>
+    <script src="../js/animations.js"></script>
+    <script>
+        // Category filter functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const filterBtns = document.querySelectorAll('.filter-btn');
+            const startupCards = document.querySelectorAll('.startup-card');
+            
+            filterBtns.forEach(btn => {
+                btn.addEventListener('click', function() {
+                    const category = this.getAttribute('data-category');
+                    
+                    // Update active button
+                    filterBtns.forEach(b => b.classList.remove('active'));
+                    this.classList.add('active');
+                    
+                    // Show/hide startups
+                    startupCards.forEach(card => {
+                        if (category === 'all' || card.getAttribute('data-category') === category) {
+                            card.style.display = 'block';
+                        } else {
+                            card.style.display = 'none';
+                        }
+                    });
+                });
+            });
+        });
+    </script>
+</body>
+</html>
+
+<style>
+/* Startup specific styles */
+.startup-stats {
+    background: var(--light-gray);
+    padding: var(--spacing-2xl) 0;
+}
+
+.category-filter {
+    padding: var(--spacing-2xl) 0;
+    background: var(--white);
+}
+
+.filter-tabs {
+    display: flex;
+    justify-content: center;
+    gap: var(--spacing-md);
+    flex-wrap: wrap;
+}
+
+.filter-btn {
+    padding: var(--spacing-md) var(--spacing-lg);
+    background: transparent;
+    border: 2px solid var(--border-color);
+    border-radius: 25px;
+    color: var(--text-dark);
+    font-weight: 500;
+    cursor: pointer;
+    transition: var(--transition-fast);
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+    background: var(--primary-color);
+    border-color: var(--primary-color);
+    color: var(--text-dark);
+}
+
+.featured-startups,
+.all-startups {
+    padding: var(--spacing-3xl) 0;
+}
+
+.all-startups {
+    background: var(--light-gray);
+}
+
+.startups-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: var(--spacing-xl);
+}
+
+.startup-card {
+    background: var(--white);
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    transition: var(--transition-normal);
+    position: relative;
+}
+
+.startup-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-hover);
+}
+
+.startup-card.featured {
+    border: 3px solid var(--primary-color);
+}
+
+.startup-badge {
+    position: absolute;
+    top: var(--spacing-md);
+    right: var(--spacing-md);
+    background: var(--primary-color);
+    color: var(--text-dark);
+    padding: var(--spacing-xs) var(--spacing-sm);
+    border-radius: 15px;
+    font-size: var(--font-size-xs);
+    font-weight: 600;
+    z-index: 1;
+}
+
+.startup-logo {
+    height: 200px;
+    overflow: hidden;
+}
+
+.startup-logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: var(--transition-slow);
+}
+
+.startup-card:hover .startup-logo img {
+    transform: scale(1.05);
+}
+
+.startup-content {
+    padding: var(--spacing-xl);
+}
+
+.startup-content h3 {
+    color: var(--secondary-color);
+    margin-bottom: var(--spacing-xs);
+}
+
+.startup-category {
+    color: var(--primary-color);
+    font-size: var(--font-size-sm);
+    font-weight: 600;
+    display: block;
+    margin-bottom: var(--spacing-md);
+}
+
+.startup-metrics {
+    display: flex;
+    justify-content: space-between;
+    margin: var(--spacing-lg) 0;
+    padding: var(--spacing-md);
+    background: var(--light-gray);
+    border-radius: 8px;
+}
+
+.metric {
+    text-align: center;
+}
+
+.metric-value {
+    display: block;
+    font-weight: 700;
+    color: var(--secondary-color);
+    font-size: var(--font-size-lg);
+}
+
+.metric-label {
+    font-size: var(--font-size-xs);
+    color: var(--text-light);
+}
+
+.startup-founder {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-md);
+    margin: var(--spacing-lg) 0;
+    padding: var(--spacing-md);
+    background: var(--light-gray);
+    border-radius: 8px;
+}
+
+.startup-founder img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.founder-info strong {
+    display: block;
+    color: var(--text-dark);
+    font-size: var(--font-size-sm);
+}
+
+.founder-info span {
+    color: var(--text-light);
+    font-size: var(--font-size-xs);
+}
+
+.startup-links {
+    display: flex;
+    gap: var(--spacing-sm);
+    flex-wrap: wrap;
+}
+
+.startup-link {
+    padding: var(--spacing-sm) var(--spacing-md);
+    background: var(--light-gray);
+    border-radius: 20px;
+    font-size: var(--font-size-sm);
+    transition: var(--transition-fast);
+    text-decoration: none;
+    color: var(--text-dark);
+}
+
+.startup-link:hover {
+    background: var(--primary-color);
+    color: var(--text-dark);
+}
+
+/* Success Stories */
+.success-stories {
+    background: var(--light-gray);
+    padding: var(--spacing-3xl) 0;
+}
+
+.stories-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--spacing-xl);
+}
+
+.story-card {
+    background: var(--white);
+    padding: var(--spacing-2xl);
+    border-radius: 15px;
+    box-shadow: var(--shadow);
+    position: relative;
+}
+
+.story-quote {
+    position: absolute;
+    top: -10px;
+    left: 20px;
+    font-size: var(--font-size-5xl);
+    color: var(--primary-color);
+    opacity: 0.3;
+    font-family: serif;
+}
+
+.story-card p {
+    font-style: italic;
+    margin-bottom: var(--spacing-lg);
+    position: relative;
+    z-index: 1;
+}
+
+.story-author {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-md);
+}
+
+.story-author img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.author-info strong {
+    display: block;
+    color: var(--text-dark);
+}
+
+.author-info span {
+    color: var(--text-light);
+    font-size: var(--font-size-sm);
+}
+
+/* CTA Section */
+.startup-cta {
+    background: linear-gradient(135deg, var(--secondary-color), var(--primary-color));
+    color: var(--white);
+    text-align: center;
+    padding: var(--spacing-3xl) 0;
+}
+
+.startup-cta h2 {
+    color: var(--white);
+    margin-bottom: var(--spacing-lg);
+}
+
+.startup-cta p {
+    font-size: var(--font-size-lg);
+    margin-bottom: var(--spacing-2xl);
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.cta-buttons {
+    display: flex;
+    justify-content: center;
+    gap: var(--spacing-lg);
+    flex-wrap: wrap;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .startups-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .filter-tabs {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .filter-btn {
+        width: 200px;
+    }
+    
+    .startup-metrics {
+        flex-direction: column;
+        gap: var(--spacing-sm);
+    }
+    
+    .stories-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .cta-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+</style>

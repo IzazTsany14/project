@@ -1,0 +1,823 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeri - UKM Kewirausahaan UNESA Kampus 5</title>
+    <meta name="description" content="Galeri foto dan dokumentasi kegiatan UKM Kewirausahaan UNESA Kampus 5 Magetan">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/components/navbar.css">
+    <link rel="stylesheet" href="../css/components/cards.css">
+    <link rel="stylesheet" href="../css/components/buttons.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="../assets/images/logos/ukm-logo.png" alt="UKM Kewirausahaan UNESA" class="logo-img">
+                <div class="logo-text">
+                    <h3>UKM Kewirausahaan</h3>
+                    <span>UNESA Kampus 5</span>
+                </div>
+            </div>
+            
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item">
+                    <a href="../index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle">Tentang Kami</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="../about/index.html">Profil UKM</a></li>
+                        <li><a href="../about/structure.html">Struktur Pengurus</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a href="../programs/index.html" class="nav-link">Program & Kegiatan</a>
+                </li>
+                <li class="nav-item">
+                    <a href="../startups/index.html" class="nav-link">Startup Mahasiswa</a>
+                </li>
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link active">Galeri</a>
+                </li>
+                <li class="nav-item">
+                    <a href="../blog/index.html" class="nav-link">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a href="../join/index.html" class="nav-link btn-primary">Join Us</a>
+                </li>
+                <li class="nav-item">
+                    <a href="../contact/index.html" class="nav-link">Kontak</a>
+                </li>
+            </ul>
+            
+            <div class="nav-actions">
+                <button class="theme-toggle" id="theme-toggle">
+                    <span class="theme-icon">🌙</span>
+                </button>
+                <button class="nav-toggle" id="nav-toggle">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="page-hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Galeri</h1>
+                <p>Dokumentasi kegiatan dan momen berharga UKM Kewirausahaan UNESA Kampus 5</p>
+                <div class="breadcrumb">
+                    <a href="../index.html">Home</a>
+                    <span>/</span>
+                    <span>Galeri</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Filter -->
+    <section class="gallery-filter">
+        <div class="container">
+            <div class="filter-tabs">
+                <button class="filter-btn active" data-category="all">Semua Foto</button>
+                <button class="filter-btn" data-category="oprec">Open Recruitment</button>
+                <button class="filter-btn" data-category="workshop">Workshop</button>
+                <button class="filter-btn" data-category="seminar">Seminar</button>
+                <button class="filter-btn" data-category="bazar">Bazar</button>
+                <button class="filter-btn" data-category="networking">Networking</button>
+                <button class="filter-btn" data-category="collaboration">Kolaborasi</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Gallery -->
+    <section class="featured-gallery">
+        <div class="container">
+            <div class="section-header">
+                <h2>Foto Unggulan</h2>
+                <p>Momen-momen terbaik dari kegiatan UKM Kewirausahaan</p>
+            </div>
+            
+            <div class="featured-grid">
+                <div class="gallery-item featured" data-category="oprec">
+                    <img src="https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop" alt="Open Recruitment 2025">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h3>Open Recruitment 2025</h3>
+                            <p>Antusiasme mahasiswa dalam mengikuti oprec UKM Kewirausahaan</p>
+                            <span class="gallery-date">15 Februari 2025</span>
+                        </div>
+                        <button class="gallery-view" onclick="openLightbox(this)">👁️ Lihat</button>
+                    </div>
+                </div>
+                
+                <div class="gallery-item featured" data-category="workshop">
+                    <img src="https://images.pexels.com/photos/3184430/pexels-photo-3184430.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop" alt="Workshop Digital Marketing">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h3>Workshop Digital Marketing</h3>
+                            <p>Pelatihan intensif strategi pemasaran digital untuk startup</p>
+                            <span class="gallery-date">20 Maret 2025</span>
+                        </div>
+                        <button class="gallery-view" onclick="openLightbox(this)">👁️ Lihat</button>
+                    </div>
+                </div>
+                
+                <div class="gallery-item featured" data-category="bazar">
+                    <img src="https://images.pexels.com/photos/3184432/pexels-photo-3184432.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop" alt="Bazar Kampus Perdana">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h3>Bazar Kampus Perdana</h3>
+                            <p>Event bazar pertama dengan partisipasi 20+ startup mahasiswa</p>
+                            <span class="gallery-date">25 April 2025</span>
+                        </div>
+                        <button class="gallery-view" onclick="openLightbox(this)">👁️ Lihat</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Gallery -->
+    <section class="main-gallery">
+        <div class="container">
+            <div class="gallery-grid">
+                <!-- Open Recruitment Photos -->
+                <div class="gallery-item" data-category="oprec">
+                    <img src="https://images.pexels.com/photos/3184339/pexels-photo-3184339.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop" alt="Presentasi Calon Anggota">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h3>Presentasi Calon Anggota</h3>
+                            <p>Sesi presentasi ide bisnis dari calon anggota baru</p>
+                            <span class="gallery-date">16 Februari 2025</span>
+                        </div>
+                        <button class="gallery-view" onclick="openLightbox(this)">👁️ Lihat</button>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="oprec">
+                    <img src="https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop" alt="Interview Calon Anggota">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h3>Interview Calon Anggota</h3>
+                            <p>Proses wawancara untuk seleksi anggota baru</p>
+                            <span class="gallery-date">17 Februari 2025</span>
+                        </div>
+                        <button class="gallery-view" onclick="openLightbox(this)">👁️ Lihat</button>
+                    </div>
+                </div>
+                
+                <!-- Workshop Photos -->
+                <div class="gallery-item" data-category="workshop">
+                    <img src="https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop" alt="Business Model Canvas">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h3>Business Model Canvas Workshop</h3>
+                            <p>Pelatihan pembuatan business model canvas</p>
+                            <span class="gallery-date">5 Maret 2025</span>
+                        </div>
+                        <button class="gallery-view" onclick="openLightbox(this)">👁️ Lihat</button>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="workshop">
+                    <img src="https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop" alt="Financial Planning">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h3>Financial Planning Workshop</h3>
+                            <p>Workshop perencanaan keuangan untuk startup</p>
+                            <span class="gallery-date">12 Maret 2025</span>
+                        </div>
+                        <button class="gallery-view" onclick="openLightbox(this)">👁️ Lihat</button>
+                    </div>
+                </div>
+                
+                <!-- Seminar Photos -->
+                <div class="gallery-item" data-category="seminar">
+                    <img src="https://images.pexels.com/photos/3184430/pexels-photo-3184430.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop" alt="Seminar Entrepreneurship">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h3>Seminar Entrepreneurship Mindset</h3>
+                            <p>Seminar dengan pembicara praktisi entrepreneur sukses</p>
+                            <span class="gallery-date">10 Maret 2025</span>
+                        </div>
+                        <button class="gallery-view" onclick="openLightbox(this)">👁️ Lihat</button>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="seminar">
+                    <img src="https://images.pexels.com/photos/3184432/pexels-photo-3184432.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop" alt="Seminar Innovation">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h3>Seminar Innovation & Creativity</h3>
+                            <p>Seminar tentang inovasi dan kreativitas dalam bisnis</p>
+                            <span class="gallery-date">24 Maret 2025</span>
+                        </div>
+                        <button class="gallery-view" onclick="openLightbox(this)">👁️ Lihat</button>
+                    </div>
+                </div>
+                
+                <!-- Bazar Photos -->
+                <div class="gallery-item" data-category="bazar">
+                    <img src="https://images.pexels.com/photos/3184339/pexels-photo-3184339.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop" alt="Stand Produk">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h3>Stand Produk Mahasiswa</h3>
+                            <p>Berbagai produk kreatif dari startup mahasiswa</p>
+                            <span class="gallery-date">26 April 2025</span>
+                        </div>
+                        <button class="gallery-view" onclick="openLightbox(this)">👁️ Lihat</button>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="bazar">
+                    <img src="https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop" alt="Interaksi dengan Pengunjung">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h3>Interaksi dengan Pengunjung</h3>
+                            <p>Mahasiswa mempresentasikan produk kepada pengunjung</p>
+                            <span class="gallery-date">26 April 2025</span>
+                        </div>
+                        <button class="gallery-view" onclick="openLightbox(this)">👁️ Lihat</button>
+                    </div>
+                </div>
+                
+                <!-- Networking Photos -->
+                <div class="gallery-item" data-category="networking">
+                    <img src="https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop" alt="Alumni Meetup">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h3>Alumni Entrepreneur Meetup</h3>
+                            <p>Pertemuan dengan alumni entrepreneur sukses</p>
+                            <span class="gallery-date">15 April 2025</span>
+                        </div>
+                        <button class="gallery-view" onclick="openLightbox(this)">👁️ Lihat</button>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="networking">
+                    <img src="https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop" alt="Industry Visit">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h3>Industry Visit</h3>
+                            <p>Kunjungan ke perusahaan startup lokal</p>
+                            <span class="gallery-date">22 April 2025</span>
+                        </div>
+                        <button class="gallery-view" onclick="openLightbox(this)">👁️ Lihat</button>
+                    </div>
+                </div>
+                
+                <!-- Collaboration Photos -->
+                <div class="gallery-item" data-category="collaboration">
+                    <img src="https://images.pexels.com/photos/3184430/pexels-photo-3184430.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop" alt="Kolaborasi Antar UKM">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h3>Kolaborasi Antar UKM</h3>
+                            <p>Kerjasama dengan UKM lain dalam event bersama</p>
+                            <span class="gallery-date">30 April 2025</span>
+                        </div>
+                        <button class="gallery-view" onclick="openLightbox(this)">👁️ Lihat</button>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="collaboration">
+                    <img src="https://images.pexels.com/photos/3184432/pexels-photo-3184432.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop" alt="Partnership Meeting">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h3>Partnership Meeting</h3>
+                            <p>Pertemuan dengan mitra strategis UKM</p>
+                            <span class="gallery-date">5 Mei 2025</span>
+                        </div>
+                        <button class="gallery-view" onclick="openLightbox(this)">👁️ Lihat</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="load-more-section">
+                <button class="btn btn-outline" id="load-more">Muat Lebih Banyak</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox Modal -->
+    <div class="lightbox" id="lightbox">
+        <div class="lightbox-content">
+            <span class="lightbox-close" onclick="closeLightbox()">&times;</span>
+            <img class="lightbox-image" id="lightbox-image" src="" alt="">
+            <div class="lightbox-info">
+                <h3 id="lightbox-title"></h3>
+                <p id="lightbox-description"></p>
+                <span id="lightbox-date"></span>
+            </div>
+            <div class="lightbox-nav">
+                <button class="lightbox-prev" onclick="prevImage()">❮</button>
+                <button class="lightbox-next" onclick="nextImage()">❯</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section footer-about">
+                    <div class="footer-logo">
+                        <img src="../assets/images/logos/ukm-logo.png" alt="UKM Kewirausahaan UNESA">
+                        <div class="footer-logo-text">
+                            <h3>UKM Kewirausahaan</h3>
+                            <span>UNESA Kampus 5</span>
+                        </div>
+                    </div>
+                    <p>Wadah inovasi dan kreativitas mahasiswa UNESA Kampus 5 untuk mengembangkan jiwa entrepreneur sejak 2025.</p>
+                    <div class="footer-social">
+                        <a href="#" class="social-link" title="Email">📧</a>
+                        <a href="#" class="social-link" title="WhatsApp">📱</a>
+                        <a href="#" class="social-link" title="Website">🌐</a>
+                        <a href="#" class="social-link" title="Instagram">📸</a>
+                    </div>
+                </div>
+                
+                <div class="footer-section footer-links">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-menu">
+                        <li><a href="../about/index.html">Tentang Kami</a></li>
+                        <li><a href="../programs/index.html">Program</a></li>
+                        <li><a href="../startups/index.html">Startup</a></li>
+                        <li><a href="index.html">Galeri</a></li>
+                        <li><a href="../blog/index.html">Blog</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section footer-programs">
+                    <h4>Program Unggulan</h4>
+                    <ul class="footer-menu">
+                        <li><a href="#">Inkubasi Bisnis</a></li>
+                        <li><a href="#">Workshop & Seminar</a></li>
+                        <li><a href="#">Bazar Kampus</a></li>
+                        <li><a href="#">Networking</a></li>
+                        <li><a href="#">Mentoring</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section footer-contact">
+                    <h4>Kontak</h4>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <span class="contact-icon">📍</span>
+                            <div class="contact-text">
+                                <p>Jl. Raya Magetan - Ponorogo Km. 6</p>
+                                <p>UNESA Kampus 5, Magetan</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-icon">📞</span>
+                            <p>+62 xxx-xxxx-xxxx</p>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-icon">📧</span>
+                            <p>ukm.kewirausahaan@unesa.ac.id</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-bottom-content">
+                    <p>&copy; 2025 UKM Kewirausahaan UNESA Kampus 5. All rights reserved.</p>
+                    <div class="footer-bottom-links">
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Terms of Service</a>
+                        <a href="#">Sitemap</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Float Button -->
+    <div class="whatsapp-float">
+        <a href="https://wa.me/6281234567890" target="_blank" class="whatsapp-btn">
+            <span class="whatsapp-icon">💬</span>
+        </a>
+    </div>
+
+    <!-- Back to Top -->
+    <div class="back-to-top" id="back-to-top">
+        <span>⬆️</span>
+    </div>
+
+    <!-- Scripts -->
+    <script src="../js/main.js"></script>
+    <script src="../js/animations.js"></script>
+    <script>
+        // Gallery functionality
+        let currentImageIndex = 0;
+        let galleryImages = [];
+        
+        document.addEventListener('DOMContentLoaded', function() {
+            initializeGallery();
+        });
+        
+        function initializeGallery() {
+            // Filter functionality
+            const filterBtns = document.querySelectorAll('.filter-btn');
+            const galleryItems = document.querySelectorAll('.gallery-item');
+            
+            filterBtns.forEach(btn => {
+                btn.addEventListener('click', function() {
+                    const category = this.getAttribute('data-category');
+                    
+                    // Update active button
+                    filterBtns.forEach(b => b.classList.remove('active'));
+                    this.classList.add('active');
+                    
+                    // Show/hide gallery items
+                    galleryItems.forEach(item => {
+                        if (category === 'all' || item.getAttribute('data-category') === category) {
+                            item.style.display = 'block';
+                        } else {
+                            item.style.display = 'none';
+                        }
+                    });
+                });
+            });
+            
+            // Collect all gallery images
+            galleryImages = Array.from(galleryItems).map(item => ({
+                src: item.querySelector('img').src,
+                title: item.querySelector('h3').textContent,
+                description: item.querySelector('p').textContent,
+                date: item.querySelector('.gallery-date').textContent
+            }));
+            
+            // Load more functionality
+            const loadMoreBtn = document.getElementById('load-more');
+            if (loadMoreBtn) {
+                loadMoreBtn.addEventListener('click', function() {
+                    // Simulate loading more images
+                    this.textContent = 'Memuat...';
+                    setTimeout(() => {
+                        this.textContent = 'Semua foto telah dimuat';
+                        this.disabled = true;
+                    }, 1000);
+                });
+            }
+        }
+        
+        function openLightbox(button) {
+            const galleryItem = button.closest('.gallery-item');
+            const img = galleryItem.querySelector('img');
+            const title = galleryItem.querySelector('h3').textContent;
+            const description = galleryItem.querySelector('p').textContent;
+            const date = galleryItem.querySelector('.gallery-date').textContent;
+            
+            // Find current image index
+            currentImageIndex = galleryImages.findIndex(image => image.src === img.src);
+            
+            // Update lightbox content
+            document.getElementById('lightbox-image').src = img.src;
+            document.getElementById('lightbox-title').textContent = title;
+            document.getElementById('lightbox-description').textContent = description;
+            document.getElementById('lightbox-date').textContent = date;
+            
+            // Show lightbox
+            document.getElementById('lightbox').style.display = 'flex';
+            document.body.style.overflow = 'hidden';
+        }
+        
+        function closeLightbox() {
+            document.getElementById('lightbox').style.display = 'none';
+            document.body.style.overflow = 'auto';
+        }
+        
+        function nextImage() {
+            currentImageIndex = (currentImageIndex + 1) % galleryImages.length;
+            updateLightboxImage();
+        }
+        
+        function prevImage() {
+            currentImageIndex = (currentImageIndex - 1 + galleryImages.length) % galleryImages.length;
+            updateLightboxImage();
+        }
+        
+        function updateLightboxImage() {
+            const image = galleryImages[currentImageIndex];
+            document.getElementById('lightbox-image').src = image.src;
+            document.getElementById('lightbox-title').textContent = image.title;
+            document.getElementById('lightbox-description').textContent = image.description;
+            document.getElementById('lightbox-date').textContent = image.date;
+        }
+        
+        // Close lightbox on escape key
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                closeLightbox();
+            } else if (e.key === 'ArrowRight') {
+                nextImage();
+            } else if (e.key === 'ArrowLeft') {
+                prevImage();
+            }
+        });
+        
+        // Close lightbox on background click
+        document.getElementById('lightbox').addEventListener('click', function(e) {
+            if (e.target === this) {
+                closeLightbox();
+            }
+        });
+    </script>
+</body>
+</html>
+
+<style>
+/* Gallery specific styles */
+.gallery-filter {
+    padding: var(--spacing-2xl) 0;
+    background: var(--white);
+}
+
+.filter-tabs {
+    display: flex;
+    justify-content: center;
+    gap: var(--spacing-md);
+    flex-wrap: wrap;
+}
+
+.filter-btn {
+    padding: var(--spacing-md) var(--spacing-lg);
+    background: transparent;
+    border: 2px solid var(--border-color);
+    border-radius: 25px;
+    color: var(--text-dark);
+    font-weight: 500;
+    cursor: pointer;
+    transition: var(--transition-fast);
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+    background: var(--primary-color);
+    border-color: var(--primary-color);
+    color: var(--text-dark);
+}
+
+.featured-gallery {
+    padding: var(--spacing-3xl) 0;
+}
+
+.featured-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: var(--spacing-xl);
+}
+
+.main-gallery {
+    background: var(--light-gray);
+    padding: var(--spacing-3xl) 0;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--spacing-lg);
+    margin-bottom: var(--spacing-2xl);
+}
+
+.gallery-item {
+    position: relative;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    transition: var(--transition-normal);
+    cursor: pointer;
+}
+
+.gallery-item:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-hover);
+}
+
+.gallery-item.featured {
+    grid-column: span 1;
+    grid-row: span 1;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    transition: var(--transition-slow);
+}
+
+.gallery-item:hover img {
+    transform: scale(1.1);
+}
+
+.gallery-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(
+        to bottom,
+        transparent 0%,
+        rgba(0, 0, 0, 0.3) 50%,
+        rgba(0, 0, 0, 0.8) 100%
+    );
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: var(--spacing-xl);
+    opacity: 0;
+    transition: var(--transition-normal);
+}
+
+.gallery-item:hover .gallery-overlay {
+    opacity: 1;
+}
+
+.gallery-info {
+    color: var(--white);
+    margin-bottom: var(--spacing-md);
+}
+
+.gallery-info h3 {
+    color: var(--white);
+    margin-bottom: var(--spacing-sm);
+    font-size: var(--font-size-lg);
+}
+
+.gallery-info p {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: var(--font-size-sm);
+    margin-bottom: var(--spacing-sm);
+}
+
+.gallery-date {
+    color: var(--primary-color);
+    font-size: var(--font-size-xs);
+    font-weight: 600;
+}
+
+.gallery-view {
+    background: var(--primary-color);
+    color: var(--text-dark);
+    border: none;
+    padding: var(--spacing-sm) var(--spacing-md);
+    border-radius: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: var(--transition-fast);
+    align-self: flex-start;
+}
+
+.gallery-view:hover {
+    background: var(--white);
+    color: var(--text-dark);
+}
+
+.load-more-section {
+    text-align: center;
+}
+
+/* Lightbox styles */
+.lightbox {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    z-index: 2000;
+    justify-content: center;
+    align-items: center;
+}
+
+.lightbox-content {
+    position: relative;
+    max-width: 90%;
+    max-height: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.lightbox-close {
+    position: absolute;
+    top: -40px;
+    right: 0;
+    color: var(--white);
+    font-size: var(--font-size-3xl);
+    cursor: pointer;
+    z-index: 2001;
+}
+
+.lightbox-image {
+    max-width: 100%;
+    max-height: 70vh;
+    object-fit: contain;
+    border-radius: 10px;
+}
+
+.lightbox-info {
+    background: var(--white);
+    padding: var(--spacing-xl);
+    border-radius: 10px;
+    margin-top: var(--spacing-md);
+    text-align: center;
+    max-width: 500px;
+}
+
+.lightbox-info h3 {
+    color: var(--secondary-color);
+    margin-bottom: var(--spacing-sm);
+}
+
+.lightbox-info p {
+    color: var(--text-light);
+    margin-bottom: var(--spacing-sm);
+}
+
+.lightbox-info span {
+    color: var(--primary-color);
+    font-weight: 600;
+    font-size: var(--font-size-sm);
+}
+
+.lightbox-nav {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 var(--spacing-xl);
+    transform: translateY(-50%);
+}
+
+.lightbox-prev,
+.lightbox-next {
+    background: rgba(255, 255, 255, 0.2);
+    color: var(--white);
+    border: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    font-size: var(--font-size-xl);
+    cursor: pointer;
+    transition: var(--transition-fast);
+}
+
+.lightbox-prev:hover,
+.lightbox-next:hover {
+    background: var(--primary-color);
+    color: var(--text-dark);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .filter-tabs {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .filter-btn {
+        width: 200px;
+    }
+    
+    .featured-grid,
+    .gallery-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .gallery-item img {
+        height: 200px;
+    }
+    
+    .lightbox-content {
+        max-width: 95%;
+        max-height: 95%;
+    }
+    
+    .lightbox-nav {
+        padding: 0 var(--spacing-md);
+    }
+    
+    .lightbox-prev,
+    .lightbox-next {
+        width: 40px;
+        height: 40px;
+        font-size: var(--font-size-lg);
+    }
+}
+</style>

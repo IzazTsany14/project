@@ -13,6 +13,8 @@
     <link rel="stylesheet" href="../css/components/cards.css">
     <link rel="stylesheet" href="../css/components/buttons.css">
     <link rel="stylesheet" href="../css/components/forms.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
 </head>
 <body>
     <!-- Navigation -->
@@ -91,7 +93,7 @@
                 <div class="timeline-item completed">
                     <div class="timeline-date">1-15 Feb</div>
                     <div class="timeline-content">
-                        <h3>📝 Pendaftaran Online</h3>
+                        <h3><i class="fas fa-file-alt"></i> Pendaftaran Online</h3>
                         <p>Pengisian formulir pendaftaran dan upload berkas persyaratan</p>
                         <span class="timeline-status completed">Selesai</span>
                     </div>
@@ -100,7 +102,7 @@
                 <div class="timeline-item active">
                     <div class="timeline-date">16-20 Feb</div>
                     <div class="timeline-content">
-                        <h3>📋 Seleksi Administrasi</h3>
+                         <h3><i class="fas fa-clipboard-check"></i> Seleksi Administrasi</h3>
                         <p>Verifikasi berkas dan kelengkapan persyaratan pendaftaran</p>
                         <span class="timeline-status active">Sedang Berlangsung</span>
                     </div>
@@ -109,7 +111,7 @@
                 <div class="timeline-item">
                     <div class="timeline-date">22-25 Feb</div>
                     <div class="timeline-content">
-                        <h3>🎤 Interview & Presentasi</h3>
+                        <h3><i class="fas fa-microphone"></i> Interview & Presentasi</h3>
                         <p>Wawancara personal dan presentasi ide bisnis</p>
                         <span class="timeline-status upcoming">Akan Datang</span>
                     </div>
@@ -118,7 +120,7 @@
                 <div class="timeline-item">
                     <div class="timeline-date">28 Feb</div>
                     <div class="timeline-content">
-                        <h3>📢 Pengumuman Hasil</h3>
+                        <h3><i class="fas fa-bullhorn"></i> Pengumuman Hasil</h3>
                         <p>Pengumuman calon anggota yang diterima</p>
                         <span class="timeline-status upcoming">Akan Datang</span>
                     </div>
@@ -127,7 +129,7 @@
                 <div class="timeline-item">
                     <div class="timeline-date">1-3 Mar</div>
                     <div class="timeline-content">
-                        <h3>🎉 Orientasi Anggota Baru</h3>
+                        <h3><i class="fas fa-user-graduate"></i> Orientasi Anggota Baru</h3>
                         <p>Pengenalan organisasi dan program kerja</p>
                         <span class="timeline-status upcoming">Akan Datang</span>
                     </div>
@@ -146,37 +148,37 @@
             
             <div class="benefits-grid">
                 <div class="benefit-card">
-                    <div class="benefit-icon">🚀</div>
+                    <div class="benefit-icon"><i class="fas fa-rocket"></i></div>
                     <h3>Inkubasi Bisnis Gratis</h3>
                     <p>Akses program inkubasi bisnis dengan mentor berpengalaman tanpa biaya tambahan</p>
                 </div>
                 
                 <div class="benefit-card">
-                    <div class="benefit-icon">🤝</div>
+                    <div class="benefit-icon"><i class="fas fa-handshake"></i></div>
                     <h3>Networking Luas</h3>
                     <p>Koneksi dengan alumni entrepreneur, praktisi industri, dan investor</p>
                 </div>
                 
                 <div class="benefit-card">
-                    <div class="benefit-icon">📚</div>
+                    <div class="benefit-icon"><i class="fas fa-book-open"></i></div>
                     <h3>Workshop Eksklusif</h3>
                     <p>Akses workshop dan seminar premium dengan pembicara berkualitas</p>
                 </div>
                 
                 <div class="benefit-card">
-                    <div class="benefit-icon">💰</div>
+                    <div class="benefit-icon"><i class="fas fa-money-bill-wave"></i></div>
                     <h3>Peluang Funding</h3>
                     <p>Kesempatan mendapat funding dan investasi untuk startup kamu</p>
                 </div>
                 
                 <div class="benefit-card">
-                    <div class="benefit-icon">🏆</div>
+                     <div class="benefit-icon"><i class="fas fa-trophy"></i></div>
                     <h3>Sertifikat & Penghargaan</h3>
                     <p>Sertifikat kegiatan dan kesempatan meraih penghargaan entrepreneur muda</p>
                 </div>
                 
                 <div class="benefit-card">
-                    <div class="benefit-icon">🌟</div>
+                    <div class="benefit-icon"><i class="fas fa-star"></i></div>
                     <h3>Personal Branding</h3>
                     <p>Platform untuk membangun personal branding sebagai entrepreneur muda</p>
                 </div>
@@ -650,6 +652,17 @@
     padding: var(--spacing-3xl) 0;
 }
 
+.timeline-item {
+    margin-bottom: var(--spacing-xl); /* Tambahan agar tidak terlalu rapat */
+}
+
+.timeline-item .timeline-content {
+    padding: var(--spacing-xl);
+    border-radius: 12px;
+    box-shadow: var(--shadow);
+    background: var(--white);
+}
+
 .timeline-item.completed .timeline-content {
     background: #E8F5E8;
     border-left: 4px solid #28A745;
@@ -662,11 +675,12 @@
 
 .timeline-status {
     display: inline-block;
-    padding: var(--spacing-xs) var(--spacing-sm);
-    border-radius: 15px;
+    padding: 4px 12px;
+    border-radius: 999px;
     font-size: var(--font-size-xs);
     font-weight: 600;
     margin-top: var(--spacing-sm);
+    white-space: nowrap;
 }
 
 .timeline-status.completed {
@@ -706,11 +720,13 @@
 .benefit-card:hover {
     transform: translateY(-5px);
     box-shadow: var(--shadow-hover);
+    color: var(--secondary-color);
 }
 
 .benefit-icon {
     font-size: var(--font-size-4xl);
     margin-bottom: var(--spacing-lg);
+    color: var(--secondary-color);
 }
 
 .benefit-card h3 {

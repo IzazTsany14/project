@@ -23,9 +23,10 @@
     margin: 0 auto;
     padding: 0 var(--spacing-lg);
     display: flex;
-    justify-content: space-between;
+    justify-content:right;
     align-items: center;
     height: 80px;
+    font-size: 14px;
 }
 
 .nav-logo {

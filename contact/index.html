@@ -19,9 +19,10 @@
     <nav class="navbar" id="navbar">
         <div class="nav-container">
             <div class="nav-logo">
-                    <img src="../gambar/LOGO IE.png" alt="UKM Kewirausahaan UNESA" class="logo-img">
-                    <a href="index.html" class="logo-text">UKM Kewirausahaan UNESA 5</a>
-            </div>    
+                <div class="nav-logo">
+                <img src="../gambar/LOGO IE.png" alt="UKM Kewirausahaan UNESA" class="logo-img">
+                <a href="index.html" class="logo-text">UKM Kewirausahaan UNESA 5</a>
+            </div>
             
             <ul class="nav-menu" id="nav-menu">
                 <li class="nav-item">
@@ -50,7 +51,6 @@
                     <a href="index.html" class="nav-link active">Kontak</a>
                 </li>
             </ul>
-            
             <div class="nav-actions">
                 <button class="theme-toggle" id="theme-toggle">
                     <span class="theme-icon">🌙</span>
@@ -79,7 +79,6 @@
         </div>
     </section>
 
-
     <!-- Contact Form & Map -->
     <section class="contact-section">
         <div class="container">
@@ -87,26 +86,22 @@
                 <div class="contact-form-section">
                     <h2>Kirim Pesan</h2>
                     <p>Isi formulir di bawah ini dan kami akan merespons dalam 24 jam</p>
-                    
                     <form class="contact-form" id="contact-form">
                         <div class="form-row">
                             <div class="form-group">
                                 <label class="form-label required">Nama Lengkap</label>
                                 <input type="text" class="form-input" name="name" data-rules="required" placeholder="Masukkan nama lengkap">
                             </div>
-                            
                             <div class="form-group">
                                 <label class="form-label required">Email</label>
                                 <input type="email" class="form-input" name="email" data-rules="required|email" placeholder="contoh@email.com">
                             </div>
                         </div>
-                        
                         <div class="form-row">
                             <div class="form-group">
                                 <label class="form-label">No. WhatsApp</label>
                                 <input type="tel" class="form-input" name="phone" data-rules="phone" placeholder="08xxxxxxxxxx">
                             </div>
-                            
                             <div class="form-group">
                                 <label class="form-label required">Subjek</label>
                                 <select class="form-select" name="subject" data-rules="required">
@@ -120,12 +115,10 @@
                                 </select>
                             </div>
                         </div>
-                        
                         <div class="form-group">
                             <label class="form-label required">Pesan</label>
                             <textarea class="form-textarea" name="message" data-rules="required|minLength:20" placeholder="Tulis pesan kamu di sini..." rows="6"></textarea>
                         </div>
-                        
                         <div class="form-group">
                             <label class="form-label">Lampiran (Opsional)</label>
                             <div class="form-file">
@@ -137,51 +130,46 @@
                             </div>
                             <small class="form-help">Format: PDF, DOC, JPG, PNG. Maksimal 5MB</small>
                         </div>
-                        
                         <div class="form-actions">
                             <button type="submit" class="btn btn-primary">Kirim Pesan</button>
                             <button type="reset" class="btn btn-secondary">Reset Form</button>
                         </div>
                     </form>
                 </div>
-                
                 <div class="map-section">
                     <h2>Kontak Person</h2>
                     <p>Hubungi langsung pengurus kami untuk informasi lebih lanjut</p>
-                    
                     <div class="persons-grid">
-                <div class="person-card">
-                    <div class="person-photo">
-                        <img src="https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&fit=crop" alt="Radja Yudha">
+                        <div class="person-card">
+                            <div class="person-photo">
+                                <img src="https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&fit=crop" alt="Radja Yudha">
+                            </div>
+                            <h3>Radja Yudha Wiyana</h3>
+                            <span class="person-position">Ketua UKM</span>
+                            <p>Informasi umum, kerjasama, dan partnership</p>
+                            <div class="person-contacts">
+                                <a href="https://wa.me/6281234567890" class="contact-btn whatsapp">📱 WhatsApp</a>
+                                <a href="mailto:radja@unesa.ac.id" class="contact-btn email">📧 Email</a>
+                            </div>
+                        </div>
+                        <div class="person-card">
+                            <div class="person-photo">
+                                <img src="https://images.pexels.com/photos/3184339/pexels-photo-3184339.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&fit=crop" alt="Sarah Devi">
+                            </div>
+                            <h3>Helsya Allaika P.</h3>
+                            <span class="person-position">Humas KWU</span>
+                            <p>Program kegiatan dan pendaftaran anggota</p>
+                            <div class="person-contacts">
+                                <a href="https://wa.me/6281234567891" class="contact-btn whatsapp">📱 WhatsApp</a>
+                                <a href="mailto:helsya@unesa.ac.id" class="contact-btn email">📧 Email</a>
+                            </div>
+                        </div>
                     </div>
-                    <h3>Radja Yudha Wiyana</h3>
-                    <span class="person-position">Ketua UKM</span>
-                    <p>Informasi umum, kerjasama, dan partnership</p>
-                    <div class="person-contacts">
-                        <a href="https://wa.me/6281234567890" class="contact-btn whatsapp">📱 WhatsApp</a>
-                        <a href="mailto:radja@unesa.ac.id" class="contact-btn email">📧 Email</a>
-                    </div>
-                </div>
-                    
-                    <div class="person-card">
-                    <div class="person-photo">
-                        <img src="https://images.pexels.com/photos/3184339/pexels-photo-3184339.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&fit=crop" alt="Sarah Devi">
-                    </div>
-                    <h3>Helsya Allaika P.</h3>
-                    <span class="person-position">Humas KWU</span>
-                    <p>Program kegiatan dan pendaftaran anggota</p>
-                    <div class="person-contacts">
-                        <a href="https://wa.me/6281234567891" class="contact-btn whatsapp">📱 WhatsApp</a>
-                        <a href="mailto:helsya@unesa.ac.id" class="contact-btn email">📧 Email</a>
-                    </div>
-                </div>
-
                 </div>
             </div>
         </div>
     </section>
 
-  
     <!-- Social Media -->
     <section class="social-media">
         <div class="container">
@@ -189,7 +177,6 @@
                 <h2>Ikuti Media Sosial Kami</h2>
                 <p>Dapatkan update terbaru tentang kegiatan dan program UKM Kewirausahaan</p>
             </div>
-            
             <div class="social-grid">
                 <a href="#" class="social-card instagram">
                     <div class="social-icon">📸</div>
@@ -197,21 +184,18 @@
                     <p>@ukm_kewirausahaan_unesa</p>
                     <span class="social-followers">1.2K followers</span>
                 </a>
-                
                 <a href="#" class="social-card youtube">
                     <div class="social-icon">📺</div>
                     <h3>YouTube</h3>
                     <p>UKM Kewirausahaan UNESA</p>
                     <span class="social-followers">850 subscribers</span>
                 </a>
-                
                 <a href="#" class="social-card linkedin">
                     <div class="social-icon">💼</div>
                     <h3>LinkedIn</h3>
                     <p>UKM Kewirausahaan UNESA Kampus 5</p>
                     <span class="social-followers">500 connections</span>
                 </a>
-                
                 <a href="#" class="social-card tiktok">
                     <div class="social-icon">🎵</div>
                     <h3>TikTok</h3>
@@ -242,7 +226,6 @@
                         <a href="#" class="social-link" title="Instagram">📸</a>
                     </div>
                 </div>
-                
                 <div class="footer-section footer-links">
                     <h4>Quick Links</h4>
                     <ul class="footer-menu">
@@ -253,7 +236,6 @@
                         <li><a href="../blog/index.html">Blog</a></li>
                     </ul>
                 </div>
-                
                 <div class="footer-section footer-programs">
                     <h4>Program Unggulan</h4>
                     <ul class="footer-menu">
@@ -264,7 +246,6 @@
                         <li><a href="#">Mentoring</a></li>
                     </ul>
                 </div>
-                
                 <div class="footer-section footer-contact">
                     <h4>Kontak</h4>
                     <div class="contact-info">
@@ -286,7 +267,6 @@
                     </div>
                 </div>
             </div>
-            
             <div class="footer-bottom">
                 <div class="footer-bottom-content">
                     <p>&copy; 2025 UKM Kewirausahaan UNESA Kampus 5. All rights reserved.</p>
@@ -479,24 +459,25 @@
     font-weight: 500;
     text-decoration: none;
     transition: var(--transition-fast);
+    color: var(--text-dark); /* Teks hitam sebelum hover */
 }
 
 .contact-btn.whatsapp {
     background: #25D366;
-    color: var(--white);
 }
 
 .contact-btn.whatsapp:hover {
     background: #1DA851;
+    color: var(--white); /* Teks putih saat hover */
 }
 
 .contact-btn.email {
     background: var(--secondary-color);
-    color: var(--white);
 }
 
 .contact-btn.email:hover {
     background: #1E4A7A;
+    color: var(--white); /* Teks putih saat hover */
 }
 
 .social-media {
@@ -568,25 +549,37 @@
     color: var(--white);
 }
 
+/* Tambahan agar semua teks di dalam social-card ikut putih saat hover */
+.social-card.instagram:hover h3,
+.social-card.instagram:hover p,
+.social-card.instagram:hover .social-followers,
+.social-card.youtube:hover h3,
+.social-card.youtube:hover p,
+.social-card.youtube:hover .social-followers,
+.social-card.linkedin:hover h3,
+.social-card.linkedin:hover p,
+.social-card.linkedin:hover .social-followers,
+.social-card.tiktok:hover h3,
+.social-card.tiktok:hover p,
+.social-card.tiktok:hover .social-followers {
+    color: var(--white);
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
     .contact-content {
         grid-template-columns: 1fr;
     }
-    
     .contact-grid {
         grid-template-columns: repeat(2, 1fr);
     }
-    
     .persons-grid {
         grid-template-columns: 1fr;
     }
-    
     .person-contacts {
         flex-direction: column;
         align-items: center;
     }
-    
     .social-grid {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -596,9 +589,5 @@
     .contact-grid {
         grid-template-columns: 1fr;
     }
-    
     .social-grid {
-        grid-template-columns: 1fr;
-    }
-}
-</style>
+        grid-template-columns:

@@ -579,20 +579,28 @@
 }
 
 .org-level {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: var(--spacing-xl);
+    justify-items: center;
+}
+
+.org-level {
     display: flex;
     justify-content: center;
     gap: var(--spacing-xl);
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
+    overflow-x: auto;
 }
 
 .org-card {
     background: var(--white);
-    padding: var(--spacing-xl);
+    padding: 2rem;
     border-radius: 15px;
     text-align: center;
     box-shadow: var(--shadow);
     transition: var(--transition-normal);
-    min-width: 200px;
+    min-width: 240px;
 }
 
 .org-card:hover {
@@ -601,8 +609,13 @@
 }
 
 .org-card.chairman {
-    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    min-width: 260px;
+    padding: 2.2rem;
+    background: linear-gradient(to bottom, #ebf6f9ff 0%, #002B5B 100%);
     color: var(--white);
+    text-align: center;
+    padding: var(--spacing-3xl) 0;
+    border: 2px solid #e0e0e0;
 }
 
 .org-photo img {

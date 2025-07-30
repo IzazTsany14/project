@@ -241,6 +241,7 @@ section {
 .stat-icon {
     font-size: var(--font-size-4xl);
     margin-bottom: var(--spacing-md);
+    color: #27548A;
 }
 
 .stat-number {
@@ -347,8 +348,9 @@ section {
 }
 
 .program-icon {
-    font-size: var(--font-size-4xl);
-    margin-bottom: var(--spacing-lg);
+    font-size: 40px;
+    color: #27548A;
+    margin-bottom: 15px;
 }
 
 .program-card h3 {
@@ -545,7 +547,7 @@ section {
 
 /* CTA Section */
 .cta {
-    background: linear-gradient(135deg, var(--secondary-color), var(--primary-color));
+    background: linear-gradient(135deg, #002B5B, #739fd1);
     color: var(--white);
     text-align: center;
 }
@@ -567,6 +569,7 @@ section {
     gap: var(--spacing-lg);
     flex-wrap: wrap;
 }
+
 
 /* Footer */
 .footer {

@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="../css/components/navbar.css">
     <link rel="stylesheet" href="../css/components/cards.css">
     <link rel="stylesheet" href="../css/components/buttons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
     <!-- Navigation -->
@@ -90,7 +92,7 @@
                     <p>UKM Kewirausahaan UNESA Kampus 5 Magetan merupakan organisasi mahasiswa yang baru didirikan pada tahun 2025. Sebagai wadah pengembangan jiwa entrepreneur, kami berkomitmen untuk menjadi pionir dalam menciptakan generasi muda yang inovatif dan berkarakter.</p>
                     
                     <div class="highlight-box">
-                        <h3>🚀 Mengapa UKM Kewirausahaan?</h3>
+                        <h3><i class="fas fa-rocket"></i> Mengapa UKM Kewirausahaan?</h3>
                         <ul>
                             <li>Pertama kali di UNESA Kampus 5 Magetan</li>
                             <li>Fokus pada pengembangan startup mahasiswa</li>
@@ -109,13 +111,13 @@
         <div class="container">
             <div class="vm-grid">
                 <div class="vision-card">
-                    <div class="vm-icon">🎯</div>
+                    <div class="vm-icon"><i class="fas fa-bullseye"></i></div>
                     <h3>Visi</h3>
                     <p>"Menjadi wadah kewirausahaan mahasiswa UNESA yang aktif, inovatif, berkarakter, dan mampu menciptakan karya bisnis nyata yang dikenal secara nasional hingga internasional."</p>
                 </div>
                 
                 <div class="mission-card">
-                    <div class="vm-icon">🎪</div>
+                    <div class="vm-icon"><i class="fas fa-flag"></i></div>
                     <h3>Misi</h3>
                     <ol>
                         <li>Mengembangkan jiwa entrepreneur mahasiswa melalui program pelatihan dan pendampingan</li>
@@ -223,37 +225,37 @@
             
             <div class="values-grid">
                 <div class="value-card">
-                    <div class="value-icon">💡</div>
+                    <div class="value-icon"><i class="fas fa-lightbulb"></i></div>
                     <h3>Inovasi</h3>
                     <p>Selalu mencari cara baru dan kreatif dalam mengembangkan bisnis dan menyelesaikan masalah.</p>
                 </div>
                 
                 <div class="value-card">
-                    <div class="value-icon">🤝</div>
+                    <div class="value-icon"><i class="fas fa-handshake"></i></div>
                     <h3>Kolaborasi</h3>
                     <p>Membangun kerjasama yang solid antar anggota dan dengan pihak eksternal untuk mencapai tujuan bersama.</p>
                 </div>
                 
                 <div class="value-card">
-                    <div class="value-icon">🎯</div>
+                    <div class="value-icon"><i class="fas fa-bullseye"></i></div>
                     <h3>Komitmen</h3>
                     <p>Berkomitmen penuh dalam setiap program dan kegiatan untuk mencapai hasil yang optimal.</p>
                 </div>
                 
                 <div class="value-card">
-                    <div class="value-icon">🌟</div>
+                    <div class="value-icon"><i class="fas fa-star"></i></div>
                     <h3>Integritas</h3>
                     <p>Menjunjung tinggi kejujuran, transparansi, dan etika dalam setiap aktivitas bisnis.</p>
                 </div>
                 
                 <div class="value-card">
-                    <div class="value-icon">🚀</div>
+                    <div class="value-icon"><i class="fas fa-rocket"></i></div>
                     <h3>Entrepreneurship</h3>
                     <p>Mengembangkan mindset dan skill entrepreneur yang adaptif terhadap perubahan zaman.</p>
                 </div>
                 
                 <div class="value-card">
-                    <div class="value-icon">💪</div>
+                    <div class="value-icon"><i class="fas fa-dumbbell"></i></div>
                     <h3>Resilience</h3>
                     <p>Memiliki ketahanan dan kemampuan bangkit dari kegagalan untuk terus berkembang.</p>
                 </div>
@@ -441,12 +443,21 @@
 .vm-icon {
     font-size: var(--font-size-4xl);
     margin-bottom: var(--spacing-lg);
+    color: #003366;
+}
+
+.vision-card:hover .vm-icon i {
+    color: #0055aa; 
 }
 
 .vision-card h3,
 .mission-card h3 {
-    color: var(--secondary-color);
+    color: #27548A;
     margin-bottom: var(--spacing-lg);
+}
+
+.mission-card:hover .vm-icon i {
+    color: #0055aa; 
 }
 
 .mission-card ol {
@@ -577,13 +588,18 @@
     box-shadow: var(--shadow-hover);
 }
 
+.value-card:hover .value-icon i {
+    color: #0055aa;
+}
+
 .value-icon {
     font-size: var(--font-size-3xl);
     margin-bottom: var(--spacing-lg);
+    color: #003366;
 }
 
 .value-card h3 {
-    color: var(--secondary-color);
+    color: #27548A;
     margin-bottom: var(--spacing-md);
 }
 

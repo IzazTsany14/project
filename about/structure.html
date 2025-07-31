@@ -164,7 +164,7 @@
             <!-- HRD Department -->
             <div class="department-section" data-department="hrd">
                 <h2>Human Resource Development</h2>
-                <div class="members-grid">
+                <div class="members-grid center-head">
                     <div class="member-card">
                         <div class="member-photo">
                             <img src="https://images.pexels.com/photos/3184430/pexels-photo-3184430.jpeg?auto=compress&cs=tinysrgb&w=200&h=200&fit=crop" alt="Kepala HRD">
@@ -172,7 +172,9 @@
                         <h3>Fatsilah F. D.</h3>
                         <span class="member-position">Head of Department</span>
                     </div>
+                </div>    
                     
+                <div class="members-grid">
                     <div class="member-card">
                         <div class="member-photo">
                             <img src="https://images.pexels.com/photos/3184432/pexels-photo-3184432.jpeg?auto=compress&cs=tinysrgb&w=200&h=200&fit=crop" alt="Staff HRD">
@@ -218,7 +220,7 @@
             <!-- R&D Department -->
             <div class="department-section" data-department="rnd">
                 <h2>Research & Development</h2>
-                <div class="members-grid">
+                <div class="members-grid center-head">
                     <div class="member-card">
                         <div class="member-photo">
                             <img src="https://images.pexels.com/photos/3184339/pexels-photo-3184339.jpeg?auto=compress&cs=tinysrgb&w=200&h=200&fit=crop" alt="Kepala R&D">
@@ -226,7 +228,9 @@
                         <h3>Nadzila Zahra A.</h3>
                         <span class="member-position">Head of Department</span>
                     </div>
-                    
+                </div>
+                 
+                <div class="members-grid">
                     <div class="member-card">
                         <div class="member-photo">
                             <img src="https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=200&h=200&fit=crop" alt="Staff R&D">
@@ -272,7 +276,7 @@
             <!-- Networking Department -->
             <div class="department-section" data-department="networking">
                 <h2>Networking</h2>
-                <div class="members-grid">
+                <div class="members-grid center-head">
                     <div class="member-card">
                         <div class="member-photo">
                             <img src="https://images.pexels.com/photos/3184430/pexels-photo-3184430.jpeg?auto=compress&cs=tinysrgb&w=200&h=200&fit=crop" alt="Kepala Networking">
@@ -280,7 +284,9 @@
                         <h3>M. Fachrial A.H.A</h3>
                         <span class="member-position">Head of Department</span>
                     </div>
-                    
+                </div>
+
+                <div class="members-grid">   
                     <div class="member-card">
                         <div class="member-photo">
                             <img src="https://images.pexels.com/photos/3184432/pexels-photo-3184432.jpeg?auto=compress&cs=tinysrgb&w=200&h=200&fit=crop" alt="Staff Networking">
@@ -318,7 +324,7 @@
             <!-- Media Department -->
             <div class="department-section" data-department="media">
                 <h2>Media & Informasi</h2>
-                <div class="members-grid">
+                 <div class="members-grid center-head">
                     <div class="member-card">
                         <div class="member-photo">
                             <img src="https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg?auto=compress&cs=tinysrgb&w=200&h=200&fit=crop" alt="Kepala Media">
@@ -326,7 +332,9 @@
                         <h3>Helsya Allaika P.</h3>
                         <span class="member-position">Head of Department</span>
                     </div>
-                    
+                 </div>
+
+                <div class="members-grid">    
                     <div class="member-card">
                         <div class="member-photo">
                             <img src="https://images.pexels.com/photos/3184339/pexels-photo-3184339.jpeg?auto=compress&cs=tinysrgb&w=200&h=200&fit=crop" alt="Staff Media">
@@ -372,7 +380,7 @@
             <!-- Business Unit -->
             <div class="department-section" data-department="business">
                 <h2>Unit Bisnis</h2>
-                <div class="members-grid">
+                 <div class="members-grid center-head">
                     <div class="member-card">
                         <div class="member-photo">
                             <img src="https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=200&h=200&fit=crop" alt="Kepala Unit Bisnis">
@@ -380,7 +388,9 @@
                         <h3>Shafira Indah D.N.H</h3>
                         <span class="member-position">Head of Department</span>
                     </div>
-                    
+                </div>
+
+                <div class="members-grid">   
                     <div class="member-card">
                         <div class="member-photo">
                             <img src="https://images.pexels.com/photos/3184430/pexels-photo-3184430.jpeg?auto=compress&cs=tinysrgb&w=200&h=200&fit=crop" alt="Staff Unit Bisnis">
@@ -698,13 +708,21 @@
 
 .members-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     gap: var(--spacing-xl);
+    margin-top: var(--spacing-lg);
+}
+
+.members-grid.center-head {
+    display: flex;
+    justify-content: center;
+    margin-bottom: var(--spacing-md); 
+    margin-bottom: var(--spacing-lg);
 }
 
 .member-card {
     background: var(--white);
-    padding: var(--spacing-xl);
+    padding: 2rem;
     border-radius: 15px;
     text-align: center;
     box-shadow: var(--shadow);
@@ -726,15 +744,22 @@
 
 .member-card h3 {
     color: var(--text-dark);
-    margin-bottom: var(--spacing-sm);
+    font-size: 1,1rem;
+    font-weight: 600;
+    margin-bottom: 8px;
+    min-height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
 .member-position {
     color: var(--primary-color);
     font-weight: 600;
-    font-size: var(--font-size-sm);
-    display: block;
+    font-size: 1rem;
     margin-bottom: var(--spacing-md);
+    display: block;
 }
 
 .member-card p {

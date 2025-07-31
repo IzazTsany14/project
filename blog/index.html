@@ -250,23 +250,6 @@
         </div>
     </section>
 
-    <!-- Newsletter Subscription -->
-    <section class="newsletter">
-        <div class="container">
-            <div class="newsletter-content">
-                <h2>Berlangganan Newsletter</h2>
-                <p>Dapatkan artikel terbaru, tips bisnis, dan update kegiatan UKM langsung di email kamu</p>
-                <form class="newsletter-form">
-                    <div class="form-group">
-                        <input type="email" class="form-input" placeholder="Masukkan email kamu" required>
-                        <button type="submit" class="btn btn-primary">Berlangganan</button>
-                    </div>
-                    <small>Kami menghargai privasi kamu. Unsubscribe kapan saja.</small>
-                </form>
-            </div>
-        </div>
-    </section>
-
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
@@ -385,17 +368,6 @@
                         this.textContent = 'Semua artikel telah dimuat';
                         this.disabled = true;
                     }, 1000);
-                });
-            }
-            
-            // Newsletter form
-            const newsletterForm = document.querySelector('.newsletter-form');
-            if (newsletterForm) {
-                newsletterForm.addEventListener('submit', function(e) {
-                    e.preventDefault();
-                    const email = this.querySelector('input[type="email"]').value;
-                    alert('Terima kasih! Email ' + email + ' telah berlangganan newsletter kami.');
-                    this.reset();
                 });
             }
         });
@@ -642,45 +614,6 @@
     text-align: center;
 }
 
-/* Newsletter */
-.newsletter {
-    background: linear-gradient(135deg, #002B5B, #ebf6f9ff);
-    color: var(--white);
-    text-align: center;
-    padding: var(--spacing-3xl) 0;
-}
-
-.newsletter h2 {
-    color: var(--white);
-    margin-bottom: var(--spacing-md);
-}
-
-.newsletter p {
-    font-size: var(--font-size-lg);
-    margin-bottom: var(--spacing-2xl);
-    color: rgba(255, 255, 255, 0.9);
-}
-
-.newsletter-form .form-group {
-    display: flex;
-    max-width: 500px;
-    margin: 0 auto var(--spacing-md);
-    gap: var(--spacing-md);
-}
-
-.newsletter-form .form-input {
-    flex: 1;
-    padding: var(--spacing-md);
-    border: none;
-    border-radius: 8px;
-    font-size: var(--font-size-base);
-}
-
-.newsletter-form small {
-    color: rgba(255, 255, 255, 0.8);
-    font-size: var(--font-size-sm);
-}
-
 /* Responsive Design */
 @media (max-width: 768px) {
     .featured-post {
@@ -712,10 +645,6 @@
     .post-stats {
         flex-direction: column;
         gap: var(--spacing-sm);
-    }
-    
-    .newsletter-form .form-group {
-        flex-direction: column;
     }
 }
 </style>

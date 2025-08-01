@@ -743,8 +743,8 @@ section {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
     background: #25D366;
     color: var(--white);
     border-radius: 50%;
@@ -763,8 +763,8 @@ section {
     position: fixed;
     bottom: 90px;
     right: 20px;
-    width: 50px;
-    height: 50px;
+    width: 50px;   
+    height: 50px; 
     background: var(--primary-color);
     color: var(--text-dark);
     border-radius: 50%;
@@ -774,9 +774,11 @@ section {
     cursor: pointer;
     opacity: 0;
     visibility: hidden;
+    font-size: var(--font-size-2xl); 
     transition: var(--transition-normal);
     z-index: 1000;
 }
+
 
 .back-to-top.visible {
     opacity: 1;

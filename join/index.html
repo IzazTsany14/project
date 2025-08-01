@@ -244,8 +244,8 @@
                             </div>
                             
                             <div class="form-group">
-                                <label class="form-label required">NPM</label>
-                                <input type="text" class="form-input" name="npm" data-rules="required|npm" placeholder="Contoh: 2025001234">
+                                <label class="form-label required">NIM</label>
+                                <input type="text" class="form-input" name="nim" data-rules="required|nim" placeholder="Contoh: 2025001234">
                             </div>
                         </div>
                         
@@ -254,10 +254,21 @@
                                 <label class="form-label required">Program Studi</label>
                                 <select class="form-select" name="major" data-rules="required">
                                     <option value="">Pilih Program Studi</option>
-                                    <option value="Pendidikan Ekonomi">Pendidikan Ekonomi</option>
-                                    <option value="Pendidikan Akuntansi">Pendidikan Akuntansi</option>
-                                    <option value="Pendidikan Administrasi Perkantoran">Pendidikan Administrasi Perkantoran</option>
-                                    <option value="Pendidikan Tata Niaga">Pendidikan Tata Niaga</option>
+                                    <option value="Informatika">Informatika</option>
+                                    <option value="Pendidikan Matematika">Pendidikan Matematika</option>
+                                    <option value="Ilmu Komunikasi">Ilmu Komunikasi</option>
+                                    <option value="Ilmu Hukum">Ilmu Hukum</option>
+                                    <option value="PJKR">PJKR</option>
+                                    <option value="Pendidikan Tata Rias">Pendidikan Tata Rias</option>
+                                    <option value="Sastra Inggris">Sastra Inggris</option>
+                                    <option value="Bimbingan Konseling">Bimbingan Konseling</option>
+                                    <option value="PBSI">PBSI</option>
+                                    <option value="PKO">PKO</option>
+                                    <option value="PGSD">PGSD</option>
+                                    <option value="PGPAUD">PGPAUD</option>
+                                    <option value="Ilmu Administrasi Negara">Ilmu Administrasi Negara</option>
+                                    <option value="Akuntansi">Akuntansi</option>
+                                    <option value="Teknologi Pendidikan">Teknologi Pendidikan</option>
                                 </select>
                             </div>
                             
@@ -801,6 +812,23 @@
     text-align: center;
 }
 
+.form-select {
+    appearance: none;          
+    -webkit-appearance: none;  
+    -moz-appearance: none;     
+    background-image: url('data:image/svg+xml;utf8,<svg fill="black" height="16" viewBox="0 0 24 24" width="16" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/></svg>');
+    background-repeat: no-repeat;
+    background-position: right 12px center; 
+    background-size: 16px;
+    padding-right: 40px; 
+}
+
+.form-actions .btn {
+    font-size: 14px;     
+    padding: 6px 16px;   
+    border-radius: 6px; 
+}
+
 .step-indicator {
     display: flex;
     justify-content: center;
@@ -832,7 +860,9 @@
     justify-content: center;
     font-weight: 600;
     transition: var(--transition-fast);
+    margin-top: 20px;
 }
+
 
 .step.active .step-number {
     background: var(--primary-color);

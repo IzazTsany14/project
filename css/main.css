@@ -570,6 +570,10 @@ section {
     flex-wrap: wrap;
 }
 
+.btn.btn-secondary:hover {
+    color: white !important; 
+    background-color: #083d79; 
+}
 
 /* Footer */
 .footer {

@@ -901,6 +901,34 @@ section {
         line-height: 1.4;
     }
 
+     .nav-menu {
+        position: absolute;
+        top: 70px;
+        right: 0;
+        background: var(--white);
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+        padding: var(--spacing-md);
+        box-shadow: var(--shadow);
+        display: none;
+    }
+
+    .nav-menu.show {
+        display: flex;
+    }
+
+    .nav-toggle {
+        display: flex;
+    }
+
+    .logo-img {
+        height: 35px; /* Logo diperkecil di mobile */
+    }
+
+    .logo-text {
+        font-size: 16px; /* Nama UKM lebih kecil */
+    }
     /* Hero section lebih ramping */
     .page-hero {
         padding: 80px 15px 50px;

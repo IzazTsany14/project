@@ -609,7 +609,7 @@
 }
 
 /* Responsive Design */
-@media (max-width: 768px) {
+@media (max-width: 480px) {
     .vm-grid {
         grid-template-columns: 1fr;
     }
@@ -645,8 +645,25 @@
     
     .timeline-date {
         position: absolute;
-        left: -70px;
+        left: 70px;
         top: 0;
+    }
+    .values-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 16px;
+    }
+
+    .value-card {
+        padding: 12px;
+    }
+
+    .value-card h3 {
+        font-size: 0.95rem;
+    }
+
+    .value-card p {
+        font-size: 0.75rem;
     }
 }
 </style>

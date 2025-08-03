@@ -885,25 +885,84 @@ section {
 }
 
 @media (max-width: 480px) {
-    .stats-grid {
-        grid-template-columns: 1fr;
+    /* Ukuran font lebih kecil */
+    :root {
+        --font-size-5xl: 2rem;
+        --font-size-4xl: 1.75rem;
+        --font-size-3xl: 1.25rem;
+        --font-size-2xl: 1.125rem;
+        --font-size-xl: 1rem;
+        --font-size-lg: 0.9rem;
+        --font-size-base: 0.85rem;
     }
-    
-    .countdown-item {
-        min-width: 80px;
+
+    body {
+        font-size: var(--font-size-base);
+        line-height: 1.4;
     }
-    
-    .footer-content {
-        grid-template-columns: 1fr;
+
+    /* Hero section lebih ramping */
+    .page-hero {
+        padding: 80px 15px 50px;
+    }
+
+    .page-hero h1 {
+        font-size: var(--font-size-3xl);
+    }
+
+    .page-hero p {
+        font-size: var(--font-size-base);
+    }
+
+    /* Section spacing lebih kecil */
+    section {
+        padding: var(--spacing-xl) 0;
+    }
+
+    .section-header p {
+        font-size: var(--font-size-base);
+    }
+
+    /* Card lebih ramping */
+    .programs-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); 
+        gap: var(--spacing-md); 
+        padding: 0 15px; 
+    }
+
+    .program-card {
+        padding: var(--spacing-md);
         text-align: center;
     }
-    
-    .footer-social {
-        justify-content: center;
+
+    .stat-card,
+    .startup-card,
+    .testimonial-card {
+        padding: var(--spacing-lg);
+    }
+
+     .countdown {
+        flex-wrap: nowrap;    
+        justify-content: space-between;
+        gap: var(--spacing-sm);  
+    }
+
+    .countdown-item {
+        padding: var(--spacing-sm);
+        min-width: 65px;       
+    }
+
+    .countdown-number {
+        font-size: 1.2rem;      
+    }
+
+    .countdown-label {
+        font-size: 0.6rem;     
+        letter-spacing: 0.5px;
     }
     
-    .footer-bottom-links {
-        flex-direction: column;
-        gap: var(--spacing-sm);
+    .stat-number {
+        font-size: var(--font-size-2xl);
     }
 }

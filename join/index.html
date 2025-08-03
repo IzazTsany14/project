@@ -710,33 +710,42 @@
 }
 
 .benefits {
-    padding: var(--spacing-3xl) 0;
+    padding: var(--spacing-2xl) 1rem;
 }
 
 .benefits-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: var(--spacing-xl);
+    gap: 2rem;
+    align-items: stretch;
+    max-width: 1200px;  
+    margin: 0 auto; 
 }
 
 .benefit-card {
     background: var(--white);
-    padding: var(--spacing-2xl);
-    border-radius: 15px;
+    height: 100%;               
+    display: flex;              
+    flex-direction: column;     
+    justify-content: space-between; 
+    padding: 1rem; 
+    font-size: 0.95rem; 
+    max-width: 100%;
+    border-radius: 12px;
     text-align: center;
     box-shadow: var(--shadow);
     transition: var(--transition-normal);
 }
 
 .benefit-card:hover {
-    transform: translateY(-5px);
+    transform: translateY(-4px);
     box-shadow: var(--shadow-hover);
     color: var(--secondary-color);
 }
 
 .benefit-icon {
-    font-size: var(--font-size-4xl);
-    margin-bottom: var(--spacing-lg);
+    font-size: var(--font-size-2xl);
+    margin-bottom: var(--spacing-sm);
     color: var(--secondary-color);
 }
 
@@ -752,16 +761,20 @@
 
 .requirements-content {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: var(--spacing-3xl);
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    justify-items: center;
 }
 
 .requirements-left,
 .requirements-right {
     background: var(--white);
-    padding: var(--spacing-2xl);
+    padding: var(--spacing-xl);
     border-radius: 15px;
     box-shadow: var(--shadow);
+    max-width: 500px;
+    width: 100%;
+    margin: 0 auto;   
 }
 
 .requirements-list {
@@ -770,10 +783,10 @@
 }
 
 .requirements-list li {
-    padding: var(--spacing-sm) 0;
+    padding: 0.5rem 0;
     position: relative;
-    padding-left: var(--spacing-lg);
-    color: var(--text-light);
+    padding-left: 1.5rem;
+    color: 0.95rem;
 }
 
 .requirements-list li::before {
@@ -944,11 +957,17 @@
 /* Responsive Design */
 @media (max-width: 768px) {
     .benefits-grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
     }
     
     .requirements-content {
         grid-template-columns: 1fr;
+    }
+
+    .requirements-left,
+    .requirements-right {
+        max-width: 90%;
     }
     
     .form-container {

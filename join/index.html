@@ -193,7 +193,8 @@
                 <h2>Persyaratan Pendaftaran</h2>
                 <p>Syarat yang harus dipenuhi untuk menjadi anggota UKM Kewirausahaan</p>
             </div>
-            
+         
+        <div class="container">
             <div class="requirements-content">
                 <div class="requirements-left">
                     <h3>Persyaratan Umum</h3>
@@ -221,6 +222,7 @@
                     </ul>
                 </div>
             </div>
+        </div>
         </div>
     </section>
 
@@ -715,11 +717,9 @@
 
 .benefits-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
-    align-items: stretch;
-    max-width: 1200px;  
-    margin: 0 auto; 
+    grid-template-columns: repeat(2, minmax(140px, 1fr));
+    gap: 1rem;
+    margin: 0 auto;
 }
 
 .benefit-card {
@@ -754,9 +754,30 @@
     margin-bottom: var(--spacing-md);
 }
 
+.container {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
 .requirements {
     background: var(--light-gray);
     padding: var(--spacing-3xl) 0;
+}
+
+.requirements-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(140px, 1fr));
+  gap: 1rem;
+  padding: 0 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.requirement-card {
+  background: var(--white);
+  border-radius: 12px;
+  box-shadow: var(--shadow);
+  padding: 1rem;
 }
 
 .requirements-content {
@@ -805,7 +826,7 @@
     max-width: 800px;
     margin: 0 auto;
     background: var(--white);
-    padding: var(--spacing-3xl);
+    padding: var(--spacing-xl);
     border-radius: 15px;
     box-shadow: var(--shadow);
     position: relative;
@@ -844,7 +865,8 @@
 
 .step-indicator {
     display: flex;
-    justify-content: center;
+    flex-direction: column; 
+    align-items: center;
     gap: var(--spacing-xl);
     margin-bottom: var(--spacing-3xl);
 }
@@ -875,7 +897,6 @@
     transition: var(--transition-fast);
     margin-top: 20px;
 }
-
 
 .step.active .step-number {
     background: var(--primary-color);
@@ -955,38 +976,78 @@
 }
 
 /* Responsive Design */
-@media (max-width: 768px) {
+@media (min-width: 768px) {
     .benefits-grid {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 1rem;
+        grid-template-columns: repeat(3, minmax(220px, 1fr));
+        gap: 2rem;
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+
+    .benefit-card {
+        padding: 2rem;
+        min-height: 230px;
     }
     
+    .requirements-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+
     .requirements-content {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+        gap: 2rem;
     }
 
     .requirements-left,
     .requirements-right {
-        max-width: 90%;
+        max-width: 100%;
+        padding: 1.5rem;
+    }
+    
+    .requirement-card {
+        padding: 2rem;
+        min-height: 230px;
     }
     
     .form-container {
-        padding: var(--spacing-2xl);
+        padding: 2rem;
     }
     
     .step-indicator {
-        flex-direction: column;
-        gap: var(--spacing-md);
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start; 
     }
     
     .step {
-        flex-direction: row;
-        justify-content: center;
+        flex-direction: column;
+        align-items: center;
     }
     
     .step-number {
         width: 30px;
         height: 30px;
+    }
+}
+
+@media (max-width: 767px) {
+    .requirements-content {
+        padding: 0 1rem; 
+    }
+
+    .requirements-left,
+    .requirements-right {
+        padding: 1.25rem;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .form-container {
+        margin: 0 1rem; /* tambahkan jarak dari kiri & kanan layar */
+        padding: 1.25rem; /* ini tetap untuk isi dalam card */
+        box-sizing: border-box;
     }
 }
 </style>
